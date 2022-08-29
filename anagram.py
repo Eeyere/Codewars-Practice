@@ -19,5 +19,9 @@ def anagrams(word, words):
         
     return ans
 
+def anagrams2(word, words):
+    return [w for w in words if sorted(word)==sorted(w)]
+
 
 print(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']))
+print(anagrams2('abba', ['aabb', 'abcd', 'bbaa', 'dada']))
